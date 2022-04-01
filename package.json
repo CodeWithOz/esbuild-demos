@@ -1,5 +1,8 @@
 {
     "dependencies": {
         "esbuild": "^0.14.21"
+    },
+    "scripts": {
+        "bundle": "node_modules/.bin/esbuild src/*.js --minify --bundle --tree-shaking=false --outdir=dist"
     }
 }
